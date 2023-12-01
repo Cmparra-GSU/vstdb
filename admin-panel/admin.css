@@ -1,0 +1,355 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'DOSVGA', monospace;
+    background-color:  #2565AE;
+  }
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+  header {
+    background-image: url('h.jpg');
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    padding: 10px 0;
+    height: 100px;
+    position: relative;
+  }
+  
+
+  .navbar {
+    background-color: #0F5298;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Consolas', monospace;
+  
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    padding-left:1%;
+    color: #fff;
+  }
+
+  .btn{
+    background-color: #ACE1AF;
+  }
+  
+.button {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover{
+    background-color: #133357;
+    cursor: pointer;
+  }
+
+  .main-content {
+    width: 75%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    top: -10px;
+  }
+  
+
+  h2{
+    font-size: 20px;
+    color: #fff;
+  }
+
+.controls{
+    margin: 0;
+    width: 45%;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    flex-basis: auto;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.action{
+    width: 20%;
+    border-right: 1px black solid;
+}
+
+
+
+.create{
+  width: auto 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+table{
+  border: 5px inset black;
+}
+
+th{
+  border-bottom: 2px solid black;
+}
+
+td{
+  border-right: 1px solid black;
+  border-top: 1px solid black
+}
+
+tr{
+  background-color: grey;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(196, 188, 188);
+}
+
+.userSearch{
+  width: 50%;
+}
+
+.pluginSearch{
+  width:100%;
+  margin: 0 auto;
+}
+
+.searchContainer{
+  width:65%;
+}
+
+.searchThings{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.createForm{
+  background-color: #2565AE;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.formSection {
+  width: auto;
+  position: relative;
+  margin-bottom: 18px;
+  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: border-color 0.5s;
+  border: 5px solid transparent;
+}
+
+.formSection:hover {
+  border-color: #E40046;
+}
+
+.formSection:focus-within {
+  border-color: #E40046;
+}
+
+
+input{
+  width: 80%;
+  margin-top:5px;
+  padding:10px;
+  
+ 
+}
+
+textarea{
+  margin-top:5px;
+  padding:10px;
+  color: black;
+  
+}
+
+.create-content {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  color: #fff;
+}
+
+select{
+  color: black;
+  width: 84%;
+  margin-top:5px;
+  padding:10px;
+}
+
+.addrem {
+  width: 50px; 
+  height: 50px; 
+  font-size: 30px; 
+  padding: 2px; 
+  border: none; 
+  margin-right: 5px;
+  background-color: #2565AE; 
+  color: #fff; 
+  cursor: pointer; 
+  border-radius: 25%; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.addrem:hover {
+  background-color: blue; 
+}
+
+.edit{
+  color: white;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchreset{
+  width: 80px;
+  height: 30px;
+  font-size: 15px; 
+  margin-right: 30px;
+  color: #fff;
+  background-color: #2565AE;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.searchreset:hover {
+  background-color: grey;
+}
+
+
+.checkbox-grid {
+  max-height: 200px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+.checkbox-grid label {
+  display: block;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+
+.checkbox-grid input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+.checkbox-grid label:hover {
+  text-decoration: underline;
+}
+
+.image-carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prev-button, .next-button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #ACE1AF;
+}
+
+.selectorContainer{
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#editedLD {
+  font-size: 20px;
+}
+
+#editedShortDescription {
+  font-size: 20px;
+}
+
+.checkbox-under-label {
+  width: auto;
+  margin-top: 5px;
+  display: block;
+}
